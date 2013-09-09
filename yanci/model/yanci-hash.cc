@@ -40,7 +40,7 @@ uint32_t Hash(const Ipv4Address & address, uint32_t seq_no)
 uint32_t Hash(const Mac48Address & address, uint16_t seq_no) 
 {
 	uint8_t buffer[6];
-	uint32_t addressInt;
+	uint32_t addressInt = 0;
 	uint32_t seq = seq_no;
 	//uint32_t addressInt = address.Get();
 	address.CopyTo(buffer);
